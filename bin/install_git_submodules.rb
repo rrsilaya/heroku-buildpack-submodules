@@ -19,7 +19,4 @@ config.get_params.each do |param|
       `git reset --hard #{c["revision"]}`
     end
   end
-
-  puts "       Removing submodule git folder"
-  `rm -rf #{ENV['BUILD_DIR']}/#{c["path"]}/.git`
 end
